@@ -26,30 +26,30 @@
 
     <dependencies>
 
-       <!-- <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
+        <!-- <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter</artifactId>
+             <version>${spring.boot.version}</version>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-web</artifactId>
+             <version>${spring.boot.version}</version>
+         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-            <scope>test</scope>
-        </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-test</artifactId>
+             <version>${spring.boot.version}</version>
+             <scope>test</scope>
+         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
--->
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-data-jpa</artifactId>
+             <version>${spring.boot.version}</version>
+         </dependency>
+ -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
@@ -182,27 +182,63 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
                     </configuration>
                 </plugin>
+
+                <plugin>
+                    <groupId>com.github.github</groupId>
+                    <artifactId>site-maven-plugin</artifactId>
+                    <version>0.12</version>
+                    <configuration>
+                        <message>Maven artifacts for ${project.version}</message>
+                        <noJekyll>true</noJekyll>
+                        <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                        <branch>refs/heads/master</branch>
+                        <includes>
+                            <include>**/*</include>
+                        </includes>
+                        <repositoryName>maven</repositoryName>
+                        <!-- 对应github上创建的仓库名称 name -->
+                        <repositoryOwner>onestravel</repositoryOwner>
+                        <!-- github 仓库所有者 -->
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>site</goal>
+                            </goals>
+                            <phase>deploy</phase>
+                        </execution>
+                    </executions>
+                </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>haoch-maven-snapshot-repository</id>-->
-            <!--<name>haoch-maven-snapshot-repository</name>-->
-            <!--<url>https://raw.github.com/${github_account}/maven/snapshot/</url>-->
-        <!--</repository>-->
-        <!--<repository>-->
-            <!--<id>haoch-maven-release-repository</id>-->
-            <!--<name>haoch-maven-release-repository</name>-->
-            <!--<url>https://raw.github.com/${github_account}/maven/release/</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
-
+    <distributionManagement>
+            <snapshotRepository>
+                <id>snapshot</id>
+                <name>snapshot</name>
+                <url>https://raw.github.com/${github_account}/maven/snapshot/</url>
+            </snapshotRepository>
+            <repository>
+                <id>release</id>
+                <name>release</name>
+                <url>https://raw.github.com/${github_account}/maven/release/</url>
+            </repository>
+    </distributionManagement>
 </project>
