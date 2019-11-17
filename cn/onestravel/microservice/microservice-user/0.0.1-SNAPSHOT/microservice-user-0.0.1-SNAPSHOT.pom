@@ -42,16 +42,16 @@
 <!--            <groupId>cn.onestravel.microservice</groupId>-->
 <!--            <version>1.0.0-RELEASE</version>-->
 <!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <artifactId>dubbosupport</artifactId>-->
-<!--            <groupId>cn.onestravel.microservice</groupId>-->
-<!--            <version>1.0.0-RELEASE</version>-->
-<!--        </dependency>-->
         <dependency>
             <artifactId>dubbosupport</artifactId>
-            <groupId>com.github.${github_account}</groupId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>cn.onestravel.microservice</groupId>
+            <version>1.0.0-RELEASE</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <artifactId>dubbosupport</artifactId>-->
+<!--            <groupId>com.github.${github_account}</groupId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
 <!--        <dependency>-->
 <!--            <artifactId>dubbosupport</artifactId>-->
 <!--            <groupId>cn.onestravel.microservice</groupId>-->
