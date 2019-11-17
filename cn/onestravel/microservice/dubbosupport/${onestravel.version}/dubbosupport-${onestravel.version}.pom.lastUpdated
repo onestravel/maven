@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Nov 17 21:39:29 CST 2019
+@default-nexus-releases-http\://www.onestravel.cn\:6061/repository/maven-releases/.lastUpdated=1573997969543
+http\://www.onestravel.cn\:6061/repository/maven-releases/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:${onestravel.version} from/to nexus-releases (http\://www.onestravel.cn\:6061/repository/maven-releases/)\: Connect to www.onestravel.cn\:6061 [www.onestravel.cn/39.107.123.128] failed\: Connection refused (Connection refused)
+http\://maven.aliyun.com/nexus/content/groups/public/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:${onestravel.version} from/to nexus-aliyun (http\://maven.aliyun.com/nexus/content/groups/public)\: TransferFailedException
+http\://www.onestravel.cn\:6061/repository/maven-snapshot/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:${onestravel.version} from/to nexus-snapshot (http\://www.onestravel.cn\:6061/repository/maven-snapshot/)\: Connect to www.onestravel.cn\:6061 [www.onestravel.cn/39.107.123.128] failed\: Connection refused (Connection refused)
+@default-nexus-aliyun-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1573997969651
+@default-nexus-snapshot-http\://www.onestravel.cn\:6061/repository/maven-snapshot/.lastUpdated=1573997969513

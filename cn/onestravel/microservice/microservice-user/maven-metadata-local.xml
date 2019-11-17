@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>cn.onestravel.microservice</groupId>
+  <artifactId>microservice-user</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191117134836</lastUpdated>
+  </versioning>
+</metadata>

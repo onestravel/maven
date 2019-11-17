@@ -1,0 +1,12 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Nov 17 20:09:22 CST 2019
+@default-nexus-snapshot-http\://www.onestravel.cn\:6061/repository/maven-snapshot/.lastUpdated=1573992561246
+https\://raw.github.com/onestravel/maven/release/.lastUpdated=1573985519306
+@default-nexus-releases-http\://www.onestravel.cn\:6061/repository/maven-releases/.lastUpdated=1573992562282
+http\://www.onestravel.cn\:6061/repository/maven-snapshot/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:1.0.0-RELEASE from/to nexus-snapshot (http\://www.onestravel.cn\:6061/repository/maven-snapshot/)\: Connect to www.onestravel.cn\:6061 [www.onestravel.cn/39.107.123.128] failed\: Connection refused (Connection refused)
+https\://raw.github.com/onestravel/maven/release/.error=
+https\://raw.github.com/onestravel/maven/snapshot/.lastUpdated=1573985517925
+http\://www.onestravel.cn\:6061/repository/maven-releases/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:1.0.0-RELEASE from/to nexus-releases (http\://www.onestravel.cn\:6061/repository/maven-releases/)\: Connect to www.onestravel.cn\:6061 [www.onestravel.cn/39.107.123.128] failed\: Connection refused (Connection refused)
+https\://repo.maven.apache.org/maven2/.lastUpdated=1573985519639
+https\://repo.maven.apache.org/maven2/.error=
+https\://raw.github.com/onestravel/maven/snapshot/.error=

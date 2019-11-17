@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Nov 17 21:43:23 CST 2019
+https\://raw.github.com/onestravel/maven/release/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:1.0-RELEASE from/to haoch-maven-release-repository (https\://raw.github.com/onestravel/maven/release/)\: Connect to raw.github.com\:443 [raw.github.com/151.101.24.133] failed\: Operation timed out (Connection timed out)
+https\://raw.github.com/onestravel/maven/snapshot/.error=Could not transfer artifact cn.onestravel.microservice\:dubbosupport\:pom\:1.0-RELEASE from/to haoch-maven-snapshot-repository (https\://raw.github.com/onestravel/maven/snapshot/)\: Connect to raw.github.com\:443 [raw.github.com/151.101.24.133] failed\: Operation timed out (Connection timed out)
+@default-haoch-maven-release-repository-https\://raw.github.com/onestravel/maven/release/.lastUpdated=1573998203703
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+@default-haoch-maven-snapshot-repository-https\://raw.github.com/onestravel/maven/snapshot/.lastUpdated=1573998128491
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1573998203849
